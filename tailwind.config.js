@@ -2,7 +2,7 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts}",
+    "./src/**/*.{js,vue}",
   ],
   theme: {
     container: {
@@ -16,8 +16,6 @@ export default {
       },
     },
     colors: {
-      transparent: 'transparent',
-      current: 'currentColor',
       "dark-blue": "#004079",
       "soft-dark-blue": "#3273BA",
       "light-blue": "#6192BF",
