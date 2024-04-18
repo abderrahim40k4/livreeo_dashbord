@@ -27,6 +27,7 @@
             </div>
         </div>
         <slot />
+        
         <div >
             <div class="p-8">
                 <img src="../assets/notification.svg" alt="">
