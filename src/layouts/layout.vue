@@ -10,8 +10,10 @@
             </div>
             <div class="w-full flex flex-col justify-normal items-start pl-8 mb-14">
                 <div class="w-full my-1 flex flex-row items-center text-white-color font-Poppins text-xs font-light hover:text-sky-color hover:border-r-4 border-sky-color active:text-sky-color active:border-r-4 cursor-pointer" v-for="item in menu" :key="item.id">
-                    <img :src="item.pathImg">
-                    <p class="mx-2">{{ item.text }}</p>
+                    <router-link :to="item.path" class="w-full flex flex-row items-center">
+                        <img :src="item.pathImg">
+                        <p class="mx-2">{{ item.text }}</p>
+                    </router-link>
                 </div>
             </div>
 
@@ -41,56 +43,67 @@ const menu = [
         id: 1,
         text:"Statistiques",
         pathImg:"../assets/icons/static.svg",
+        path:'/statics'
     },
     {
         id: 2,
         text:"Produits",
         pathImg:'../assets/icons/prodact.svg',
+        path:'/'
     },
     {
         id: 3,
         text:"Categories",
         pathImg:'../assets/icons/cate.svg',
+        path:'/'
     },
     {
         id: 4,
         text:"Liste Scolaires",
         pathImg:'../assets/icons/list.svg',
+        path:'/'
     },
     {
         id: 5,
         text:"Commandes",
         pathImg:'../assets/icons/comond.svg',
+        path:'/comonds'
     },
     {
         id: 6,
         text:"Villes",
         pathImg:'../assets/icons/city.svg',
+        path:'/'
     },
     {
         id: 7,
         text:"Écoles",
         pathImg:'../assets/icons/shoole.svg',
+        path:'/'
     },
     {
         id: 8,
         text:"Classes",
         pathImg:'../assets/icons/class.svg',
+        path:'/'
     },
     {
         id: 9,
         text:"Langues",
         pathImg:'../assets/icons/lang.svg',
+        path:'/'
     },
     {
         id: 10,
         text:"Coupon Code",
         pathImg:'../assets/icons/code.svg',
+        path:'/'
     },
     {
         id: 11,
         text:"Fournitures",
         pathImg:'../assets/icons/stuck.svg',
+        path:'/'
     },
 ]
 </script>
