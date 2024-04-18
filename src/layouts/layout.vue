@@ -29,8 +29,8 @@
         <slot />
         
         <div >
-            <div class="p-8">
-                <img src="../assets/notification.svg" alt="">
+            <div class="py-8 pr-8 h-auto">
+                <img src="../assets/notification.svg" alt="" class="w-full">
             </div>
         </div>
     </div>
