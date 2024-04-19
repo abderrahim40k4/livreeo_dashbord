@@ -42,7 +42,7 @@
                 </th>
                 <th scope="col" class="text-center font-light">10000</th>
                 <th scope="col" class="text-center w-full flex flex-row items-center justify-evenly h-full py-5">
-                  <img src="../assets/icons/edit.svg">
+                  <img src="../assets/icons/edit.svg" @click="openModal">
                   <img src="../assets/icons/show.svg">
                 </th>
               </tr>
@@ -51,12 +51,22 @@
           
         </div>
       </div>
+      <editDailog :is-open="isOpen"/>
     </div>
   </template>
   <script setup>
 import { ref } from 'vue'
 import { Switch } from '@headlessui/vue'
+import editDailog from './popup/editDailog.vue';
 
 const enabled = ref(false)
+
+const isOpen = ref(false)
+
+
+function openModal() {
+  isOpen.value = true
+}
+
 </script>
   
