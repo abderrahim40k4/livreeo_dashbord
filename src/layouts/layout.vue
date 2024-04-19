@@ -49,7 +49,7 @@ const menu = [
         id: 2,
         text:"Produits",
         pathImg:'../assets/icons/prodact.svg',
-        path:'/'
+        path:'/prodact'
     },
     {
         id: 3,

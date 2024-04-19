@@ -4,7 +4,7 @@ import Layout from "../layouts/layout.vue";
 
 import Statics from "../views/Statics.vue";
 import Comonds from "../views/comonds.vue"
-
+import Prodact from "../views/prodact.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -24,6 +24,12 @@ const router = createRouter({
             name: 'comonds',
             meta:{layout: Layout},
             component: Comonds
+          },
+          {
+            path: '/prodact',
+            name: 'prodact',
+            meta:{layout: Layout},
+            component: Prodact
           },
     ]
   })
