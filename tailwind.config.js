@@ -23,7 +23,9 @@ export default {
       "white-color": "#fff",
       "accent-color": "#3476B9",
       "red": "#FF0000",
+      "green":'#75E562',
       "sky-color":"#00B8D0",
+      "dark":"#333"
     },
     fontFamily: {
       Poppins: ["Poppins", "sans-serif"],
