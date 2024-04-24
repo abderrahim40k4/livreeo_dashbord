@@ -5,43 +5,48 @@
         Statistiques
       </p>
 
-      <div class="w-full px-8 mt-8">
-        <table class="w-full table-fixed h-5/6">
-          <thead class="w-full">
-            <tr class="h-16 font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
-              <th scope="col" class="text-start">Nº de commande</th>
-              <th scope="col" class="text-center">Date</th>
-              <th scope="col" class="text-center">Type de pack</th>
-              <th scope="col" class="text-center">Prix</th>
-              <th scope="col" class="text-center">Status</th>
-              <th scope="col" class="text-center">Detail</th>
-            </tr>
-          </thead>
+      <div class="w-full px-8 mt-8 h-5/6 overflow-clip ">
+        <div class="w-full ">
+          <div class="w-full">
 
-          <tbody class="">
-            <tr class="h-16 font-Poppins text-dark-blue font-thin text-xs">
-              <th scope="col" class="text-start font-light">Nº de commande</th>
-              <th scope="col" class="text-center font-light">Date</th>
-              <th scope="col" class="text-center font-light">Type de pack</th>
-              <th scope="col" class="text-center font-light">Status</th>
-              <th scope="col" class="text-center font-light">
-                <select class="w-5/6 justify-evenly items-center p-2 border border-dark-blue rounded-full">
+            <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
+              <li scope="col" class="text-start">Nº de commande</li>
+              <li scope="col" class="text-center">Date</li>
+              <li scope="col" class="text-center">Type de pack</li>
+              <li scope="col" class="text-center">Prix</li>
+              <li scope="col" class="text-center">Status</li>
+              <li scope="col" class="text-center">Detail</li>
+            </ul>
+          </div>
+
+          
+          <div class="mt-4">
+            <div class="h-11 my-1">
+            <ul class="font-Poppins text-dark-blue font-thin text-xs flex flex-row justify-between items-center" >
+              <li scope="col" class="h-12 text-start font-normal w-1/6">LV0001</li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/6">05/05/2005</li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/6">Pack Rentré</li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/6">900,00 DHS</li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/6">
+                <select class="justify-evenly items-center px-2 py-1 border border-dark-blue rounded-full w-4/6">
                     <option>test</option>
                 </select>
-              </th>
-              <th scope="col" class="text-center w-full flex flex-row items-center justify-evenly h-full py-5">
-                <img src="../assets/icons/show.svg">
-                <img src="../assets/icons/delet.svg">
-              </th>
-            </tr>
-          </tbody>
-        </table>
+              </li>
+              <li scope="col" class="w-1/6 flex flex-row justify-evenly p-0">
+                <div><img src="../assets/icons/show.svg"></div>
+                <div><img src="../assets/icons/delet.svg" ></div>
+              </li>
+            </ul>
+          </div>
+          </div>
+        
+        </div>
         
       </div>
+      <slideChanger/>
     </div>
   </div>
 </template>
 <script setup>
-
-
+import slideChanger from './slideChanger.vue';
 </script>
