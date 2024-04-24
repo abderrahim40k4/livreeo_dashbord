@@ -6,27 +6,32 @@
                 + Ajouter un produits
             </p>
         </button>
-  
-        <div class="w-full px-8 mt-8">
-          <table class="w-full table-fixed h-5/6">
-            <thead class="w-full">
-              <tr class="h-16 font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
-                <th scope="col" class="text-start">Image</th>
-                <th scope="col" class="text-center">Nom de Produit</th>
-                <th scope="col" class="text-center">Status</th>
-                <th scope="col" class="text-center">Prix</th>
-                <th scope="col" class="text-center"></th>
-              </tr>
-            </thead>
-  
-            <tbody class="">
-              <tr class="h-16 font-Poppins text-dark-blue font-thin text-sm">
-                <th scope="col" class="text-start font-light">
-                    <img src="../assets/prodact.png" class="w-1/2">
-                </th>
-                <th scope="col" class="text-center font-light">cartabl</th>
-                <th scope="col" class="text-center font-light">
-                    <Switch
+
+
+
+        <div class="w-full px-8 mt-8 h-5/6 overflow-clip ">
+        <div class="w-full ">
+          <div class="w-full">
+
+            <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
+              <li scope="col" class="text-start w-1/5 ">Image</li>
+              <li scope="col" class="text-center w-1/5">Nom de Produit</li>
+              <li scope="col" class="text-center w-1/5">Status</li>
+              <li scope="col" class="text-center w-1/5">Prix</li>
+              <li scope="col" class="text-center w-1/5"></li>
+            </ul>
+          </div>
+
+          
+          <div class="mt-4">
+            <div class="h-11 my-1">
+            <ul class="font-Poppins text-dark-blue font-thin text-xs flex flex-row justify-between items-center" >
+              <li scope="col" class="h-12 text-start font-normal w-1/5">
+                <img src="../assets/prodact.png" class="h-full">
+              </li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/5">cartabl</li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/5">
+                <Switch
                             v-model="enabled"
                             :class="enabled ? 'bg-[#75E562] border-white-color' : 'bg-[#cec8c8] border-2 border-transparent'"
                             class="relative inline-flex h-[23px] w-[49px] shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
@@ -39,17 +44,20 @@
                                 class="pointer-events-none inline-block h-[19px] w-[19px] transform rounded-full bg-white-color shadow-lg ring-0 transition duration-200 ease-in-out"
                             />
                             </Switch>
-                </th>
-                <th scope="col" class="text-center font-light">10000</th>
-                <th scope="col" class="text-center w-full flex flex-row items-center justify-evenly h-full py-5">
-                  <img src="../assets/icons/edit.svg" @click="openModal">
+              </li>
+              <li scope="col" class="h-12 text-center font-normal  w-1/5">900,00 DHS</li>
+              <li scope="col" class="w-1/5 flex flex-row justify-end">
+                <img src="../assets/icons/edit.svg" @click="openModal">
                   <img src="../assets/icons/show.svg">
-                </th>
-              </tr>
-            </tbody>
-          </table>
-          
+              </li>
+            </ul>
+          </div>
+          </div>
         </div>
+        
+      </div>
+
+
       </div>
     </div>
 
@@ -155,7 +163,7 @@ import {
   DialogTitle,
 } from '@headlessui/vue'
 
-const isOpen = ref(true)
+const isOpen = ref(false)
 
 function closeModal() {
   isOpen.value = false
