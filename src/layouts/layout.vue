@@ -55,7 +55,7 @@ const menu = [
         id: 3,
         text:"Categories",
         pathImg:'../assets/icons/cate.svg',
-        path:'/'
+        path:'/category'
     },
     {
         id: 4,

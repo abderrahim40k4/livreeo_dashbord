@@ -4,7 +4,8 @@ import Layout from "../layouts/layout.vue";
 
 import Statics from "../views/Statics.vue";
 import Comonds from "../views/comonds.vue"
-import Prodact from "../views/prodact.vue"
+import Prodact from "../views/prodact.vue";
+import Category from "../views/catigory.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -30,6 +31,12 @@ const router = createRouter({
             name: 'prodact',
             meta:{layout: Layout},
             component: Prodact
+          },
+          {
+            path: '/category',
+            name: 'category',
+            meta:{layout: Layout},
+            component: Category
           },
     ]
   })
