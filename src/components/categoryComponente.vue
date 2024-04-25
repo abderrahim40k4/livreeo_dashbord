@@ -83,9 +83,11 @@
             leave-to="opacity-0 scale-95"
           >
             <DialogPanel
-              class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all"
+              class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all rounded-xl"
             >
-              <div class="w-3/4">test</div>
+              <div class="mt-4 w-full flex flex-row justify-evenly p-8">
+                <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xl border-2 border-dark-blue  rounded-full"  placeholder="Category">
+              </div>
 
               <div class="mt-4 w-full flex flex-row justify-evenly">
                 <button
