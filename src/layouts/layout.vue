@@ -9,10 +9,10 @@
                 </div>
             </div>
             <div class="w-full flex flex-col justify-normal items-start pl-8 mb-14">
-                <div class="w-full my-1 flex flex-row items-center text-white-color font-Poppins text-xs font-light hover:text-sky-color hover:border-r-4 border-sky-color active:text-sky-color active:border-r-4 cursor-pointer" v-for="item in menu" :key="item.id">
+                <div class="w-full my-1 flex flex-row items-center font-Poppins text-xs  hover:border-r-4 border-sky-color active:text-sky-color active:border-r-4 cursor-pointer" v-for="item in menu" :key="item.id">
                     <router-link :to="item.path" class="w-full flex flex-row items-center">
-                        <img :src="item.pathImg">
-                        <p class="mx-2">{{ item.text }}</p>
+                        <img :src="item.pathImg" class="stroke-dark-blue fill-dark-blue">
+                        <p class="mx-1 font-medium hover:text-sky-color" :class="item.isActive  ? 'text-sky-color' : 'text-white-color'" @click="item.isActive != item.isActive">{{ item.text }}</p>
                     </router-link>
                 </div>
             </div>
@@ -38,72 +38,106 @@
     </div>
 </template>
 <script setup>
+import {ref} from 'vue';
+import statice from "../assets/icons/static.svg"
+import prodact from "../assets/icons/prodact.svg"
+import cate from "../assets/icons/cate.svg"
+import list from "../assets/icons/list.svg"
+import comond from "../assets/icons/comond.svg"
+import city from "../assets/icons/city.svg"
+import shoole from "../assets/icons/shoole.svg"
+import classe from "../assets/icons/class.svg"
+import lang from "../assets/icons/lang.svg"
+import code from "../assets/icons/code.svg"
+import stuck from "../assets/icons/stuck.svg"
 const menu = [
     {
         id: 1,
         text:"Statistiques",
-        pathImg:"../assets/icons/static.svg",
-        path:'/statics'
+        pathImg:statice, 
+        path:'/statics',
+        isActive:false
     },
     {
         id: 2,
         text:"Produits",
-        pathImg:'../assets/icons/prodact.svg',
-        path:'/prodact'
+        pathImg:prodact,
+        path:'/prodact',
+        isActive:false
     },
     {
         id: 3,
         text:"Categories",
-        pathImg:'../assets/icons/cate.svg',
-        path:'/category'
+        pathImg:cate,
+        path:'/category',
+        isActive:false
     },
     {
         id: 4,
         text:"Liste Scolaires",
-        pathImg:'../assets/icons/list.svg',
-        path:'/'
+        pathImg:list,
+        path:'/',
+        isActive:false
     },
     {
         id: 5,
         text:"Commandes",
-        pathImg:'../assets/icons/comond.svg',
-        path:'/comonds'
+        pathImg:comond,
+        path:'/comonds',
+        isActive:false
     },
     {
         id: 6,
         text:"Villes",
-        pathImg:'../assets/icons/city.svg',
-        path:'/'
+        pathImg:city,
+        path:'/',
+        isActive:false
     },
     {
         id: 7,
         text:"Écoles",
-        pathImg:'../assets/icons/shoole.svg',
-        path:'/'
+        pathImg:shoole,
+        path:'/',
+        isActive:false
     },
     {
         id: 8,
         text:"Classes",
-        pathImg:'../assets/icons/class.svg',
-        path:'/'
+        pathImg:classe,
+        path:'/',
+        isActive:false
     },
     {
         id: 9,
         text:"Langues",
-        pathImg:'../assets/icons/lang.svg',
-        path:'/'
+        pathImg:lang,
+        path:'/',
+        isActive:false
     },
     {
         id: 10,
         text:"Coupon Code",
-        pathImg:'../assets/icons/code.svg',
-        path:'/'
+        pathImg:code,
+        path:'/',
+        isActive:false
     },
     {
         id: 11,
         text:"Fournitures",
-        pathImg:'../assets/icons/stuck.svg',
-        path:'/'
+        pathImg:stuck,
+        path:'/',
+        isActive:false
     },
 ]
+
+function toggel(index){
+    menu.forEach(element => {
+        if(element.id == index){
+            element.isActive = true
+        }else{
+            element.isActive = false
+        }
+        
+    });
+}
 </script>

@@ -57,7 +57,7 @@
         
       </div>
 
-
+      <slideChanger/>
       </div>
     </div>
 
@@ -155,6 +155,7 @@
   <script setup>
 import { ref } from 'vue'
 import { Switch } from '@headlessui/vue'
+import slideChanger from './slideChanger.vue';
 import {
   TransitionRoot,
   TransitionChild,
