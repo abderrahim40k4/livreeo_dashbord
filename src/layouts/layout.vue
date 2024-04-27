@@ -1,18 +1,18 @@
 <template>
     <div class="h-screen flex flex-row justify-between items-start">
-        <div class="w-[250px] bg-dark-blue h-full flex flex-col items-center justify-evenly">
+        <div class="w-max bg-dark-blue h-full flex flex-col items-center justify-evenly">
             <div class="w-full flex flex-row justify-normal items-center px-8">
-                <div class="h-11 w-11 bg-white-color rounded-full"></div>
-                <div class="mx-2 flex flex-col justify-evenly h-11 items-start font-Poppins text-white-color">
-                    <p clas="text-sm">Karim Chami</p>
-                    <p class="text-xs font-light">Administration</p>
+                <div class="h-10 w-10 bg-white-color rounded-full"></div>
+                <div class="mx-2 flex flex-col justify-evenly h-11 items-start font-Poppins text-white-color w-max">
+                    <p clas="text-xs text-nowrap">Karim Chami</p>
+                    <p class="text-xs font-light w-full">Administration</p>
                 </div>
             </div>
             <div class="w-full flex flex-col justify-normal items-start pl-8 mb-14">
                 <div class="w-full my-1 flex flex-row items-center font-Poppins text-xs  hover:border-r-4 border-sky-color active:text-sky-color active:border-r-4 cursor-pointer" v-for="item in menu" :key="item.id">
                     <router-link :to="item.path" class="w-full flex flex-row items-center">
                         <img :src="item.pathImg" class="stroke-dark-blue fill-dark-blue">
-                        <p class="mx-1 font-medium hover:text-sky-color" :class="item.isActive  ? 'text-sky-color' : 'text-white-color'" @click="item.isActive != item.isActive">{{ item.text }}</p>
+                        <p class="mx-4 font-light text-sm hover:text-sky-color" :class="item.isActive  ? 'text-sky-color' : 'text-white-color'" @click="item.isActive != item.isActive">{{ item.text }}</p>
                     </router-link>
                 </div>
             </div>

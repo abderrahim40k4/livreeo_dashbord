@@ -1,7 +1,7 @@
 <template class="w-4/5">
     <div class="h-full p-16 w-4/5 flex justify-center items-center">
       <div class="w-full h-full pb-10">
-        <button class="px-4 py-2 my-4 rounded-full bg-dark-blue w-1/5">
+        <button class="px-4 my-4 rounded-full bg-dark-blue w-[283px] py-3">
             <p class="font-Popins text-white-color font-light">
                 + Ajouter un produits
             </p>
@@ -25,27 +25,27 @@
           
           <div class="mt-4">
             <div class="h-11 my-1">
-            <ul class="font-Poppins text-dark-blue font-thin text-xs flex flex-row justify-between items-center" >
-              <li scope="col" class="h-12 text-start font-normal w-1/5">
+            <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
+              <li scope="col" class="h-10 text-start font-normal w-1/5">
                 <img src="../assets/prodact.png" class="h-full">
               </li>
-              <li scope="col" class="h-12 text-center font-normal  w-1/5">cartabl</li>
-              <li scope="col" class="h-12 text-center font-normal  w-1/5">
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/5">cartabl</li>
+              <li scope="col" class="h-full text-center font-normal flex justify-center items-center w-1/5">
                 <Switch
                             v-model="enabled"
-                            :class="enabled ? 'bg-[#75E562] border-white-color' : 'bg-[#cec8c8] border-2 border-transparent'"
-                            class="relative inline-flex h-[23px] w-[49px] shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
+                            :class="enabled ? 'bg-[#75E562] px-1' : 'bg-[#cec8c8]'"
+                            class="relative inline-flex items-center h-[23px] px-1 w-[49px] shrink-0 cursor-pointer rounded-full transition-colors duration-200 ease-in-out focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75"
                             >
                             <span class="sr-only">Use setting</span>
                             <span
                             c
                                 aria-hidden="true"
-                                :class="enabled ? 'translate-x-9' : 'translate-x-0'"
-                                class="pointer-events-none inline-block h-[19px] w-[19px] transform rounded-full bg-white-color shadow-lg ring-0 transition duration-200 ease-in-out"
+                                :class="enabled ? 'translate-x-6' : 'translate-x-0'"
+                                class="pointer-events-none h-[17px] w-[17px] transform rounded-full bg-white-color shadow-lg ring-0 transition duration-200 ease-in-out"
                             />
                             </Switch>
               </li>
-              <li scope="col" class="h-12 text-center font-normal  w-1/5">900,00 DHS</li>
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/5">900,00 DHS</li>
               <li scope="col" class="w-1/5 flex flex-row justify-end">
                 <img src="../assets/icons/edit.svg" @click="openModal">
                   <img src="../assets/icons/show.svg">
