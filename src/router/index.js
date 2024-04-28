@@ -6,7 +6,8 @@ import Statics from "../views/Statics.vue";
 import Comonds from "../views/comonds.vue"
 import Prodact from "../views/prodact.vue";
 import Category from "../views/catigory.vue";
-import Fourniture from "../views/fournitures.vue"
+import Fourniture from "../views/fournitures.vue";
+import AddFourniture from "../views/addFourniture.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -38,6 +39,12 @@ const router = createRouter({
             name: 'fourniture',
             meta:{layout: Layout},
             component: Fourniture
+          },
+          {
+            path: '/add-fornitur',
+            name: 'add-fourniture',
+            meta:{layout: Layout},
+            component: AddFourniture
           },
           {
             path: '/category',

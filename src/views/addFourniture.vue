@@ -1,15 +1,11 @@
-
 <template>
         
     <component :is="$route.meta.layout">
     <router-view />
-      <fournitureComponent/>
+      <comondsComponents/>
     </component>
-    
 
 </template>
 <script setup>
-
-import fournitureComponent from '../components/fournitureComponent.vue'
-
+import comondsComponents from '../components/comondsComponents.vue';
 </script>
