@@ -2,7 +2,7 @@
     <div class="h-screen flex flex-row justify-between items-start">
         <div class="w-max bg-dark-blue h-full flex flex-col items-center justify-evenly">
             <div class="w-full flex flex-row justify-normal items-center px-8">
-                <div class="h-10 w-10 bg-white-color rounded-full"></div>
+                <div class="h-10 w-10d bg-white-color rounded-full"></div>
                 <div class="mx-2 flex flex-col justify-evenly h-11 items-start font-Poppins text-white-color w-max">
                     <p clas="text-xs text-nowrap">Karim Chami</p>
                     <p class="text-xs font-light w-full">Administration</p>
@@ -125,7 +125,7 @@ const menu = [
         id: 11,
         text:"Fournitures",
         pathImg:stuck,
-        path:'/',
+        path:'/fourniture',
         isActive:false
     },
 ]
