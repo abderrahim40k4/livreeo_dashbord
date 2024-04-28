@@ -13,7 +13,7 @@
         <div class="w-full ">
           <div class="w-full">
 
-            <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
+            <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2 ">
               <li scope="col" class="text-start w-1/7 ">Liste</li>
               <li scope="col" class="text-center w-1/7">Nº des Articles</li>
               <li scope="col" class="text-center w-1/7">Prix Total</li>
@@ -25,7 +25,7 @@
           </div>
 
           
-          <div class="mt-4">
+          <div class="mt-8">
             <div class="h-11 my-1">
             <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
               <li scope="col" class="h-10 text-start font-normal w-1/6 flex flex-row items-center justify-between">
