@@ -14,13 +14,13 @@
           <div class="w-full">
 
             <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
-              <li scope="col" class="text-start w-1/5 ">Image</li>
-              <li scope="col" class="text-center w-1/5">Nom de Produit</li>
-              <li scope="col" class="text-center w-1/5">Status</li>
-              <li scope="col" class="text-center w-1/5">Nom de Produit</li>
-              <li scope="col" class="text-center w-1/5">Status</li>
-              <li scope="col" class="text-center w-1/5">Prix</li>
-              <li scope="col" class="text-center w-1/5"></li>
+              <li scope="col" class="text-start w-1/7 ">Liste</li>
+              <li scope="col" class="text-center w-1/7">Nº des Articles</li>
+              <li scope="col" class="text-center w-1/7">Prix Total</li>
+              <li scope="col" class="text-center w-1/7">École</li>
+              <li scope="col" class="text-center w-1/7">Ville</li>
+              <li scope="col" class="text-center w-1/7">Status</li>
+              <li scope="col" class="text-center w-1/7"></li>
             </ul>
           </div>
 
@@ -28,11 +28,18 @@
           <div class="mt-4">
             <div class="h-11 my-1">
             <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
-              <li scope="col" class="h-10 text-start font-normal w-1/5">
-                <img src="../assets/prodact.png" class="h-full">
+              <li scope="col" class="h-10 text-start font-normal w-1/6 flex flex-row items-center justify-between">
+                <img src="../assets/book.svg" class="w-1/3">
+                <div class="font-medium text-[10px] h-3/4">
+                  <p>Collège ANATOLE</p>
+                    <p>FRANCE  / 3ºA</p>
+                </div>
               </li>
-              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/5">cartabl</li>
-              <li scope="col" class="h-full text-center font-normal flex justify-center items-center w-1/5">
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/7">10</li>
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/7">900,00</li>
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/7">URC</li>
+              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/7">Casablanca</li>
+              <li scope="col" class="h-full text-center font-normal flex justify-center items-center w-1/7">
                 <Switch
                             v-model="enabled"
                             :class="enabled ? 'bg-[#75E562] px-1' : 'bg-[#cec8c8]'"
@@ -47,8 +54,7 @@
                             />
                             </Switch>
               </li>
-              <li scope="col" class="text-center font-normal flex justify-center items-center h-full w-1/5">900,00 DHS</li>
-              <li scope="col" class="w-1/5 flex flex-row justify-end">
+              <li scope="col" class="w-1/7 flex flex-row justify-end">
                 <img src="../assets/icons/edit.svg" @click="openModal">
                   <img src="../assets/icons/show.svg">
               </li>
