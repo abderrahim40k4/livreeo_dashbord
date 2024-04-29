@@ -2,10 +2,10 @@
         
     <component :is="$route.meta.layout">
     <router-view />
-      <comondsComponents/>
+      <addToFourniture/>
     </component>
 
 </template>
 <script setup>
-import comondsComponents from '../components/comondsComponents.vue';
+import addToFourniture from '../components/addToFourniture.vue'
 </script>

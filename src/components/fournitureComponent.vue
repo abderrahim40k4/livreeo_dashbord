@@ -1,11 +1,14 @@
 <template class="w-4/5">
     <div class="h-full p-16 w-4/5 flex justify-center items-center">
       <div class="w-full h-full pb-10">
+
+        <router-link to="/add-fornitur" class="w-full flex flex-row items-start">
         <button class="px-4 my-4 rounded-full bg-dark-blue w-[283px] py-3">
             <p class="font-Popins text-white-color font-light">
                 + Ajouter un produits
             </p>
         </button>
+      </router-link>
 
 
 
