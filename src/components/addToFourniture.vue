@@ -11,15 +11,32 @@
         </div>
         <div class="">
             <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Sélectionner l’école</label>
-            <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium" placeholder="URC">
+            <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium focus:border-sky-color focus:ring-sky-color active:ring-sky-color active:border-sky-color " placeholder="URC">
         </div>
         <div class="">
-            <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Sélectionner la classe</label>
+            <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Sélectionner la classe </label>
             <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium" placeholder="3eme">
         </div>
         <div class="">
             <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Sélectionner les languges</label>
-            <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium" placeholder="3eme">
+            
+            <div class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium flex flex-row justify-end  items-center">
+              <div class="w-11/12 font-Poppins font-medium text-sm text-[#6D6D6D] ">
+                <div class="">
+
+                </div>
+              </div>
+              <div class="w-1/12 inline-flex items-center justify-center">
+                <select class="w-full h-full">
+                  <option>1</option>
+                  <option>1</option>
+                  <option>1</option>
+                  <option>1</option>
+                  <option>1jjhghdgahjdg</option>
+                </select>
+                              </div>
+
+            </div>
         </div>
         <div class="">
             <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Ajouter la liste format PDF</label>
@@ -75,5 +92,7 @@
   </template>
   <script setup>
 import { ref } from 'vue'
+
+
 </script>
   
