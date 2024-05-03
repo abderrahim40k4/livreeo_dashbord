@@ -76,7 +76,7 @@ const menu = [
         id: 4,
         text:"Liste Scolaires",
         pathImg:list,
-        path:'/',
+        path:'/list-book',
         isActive:false
     },
     {

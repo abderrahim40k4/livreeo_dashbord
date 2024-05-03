@@ -2,7 +2,7 @@
         
     <component :is="$route.meta.layout">
     <router-view />
-      <categoryComponente/>
+      test
     </component>
 
 </template>

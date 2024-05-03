@@ -7,7 +7,8 @@ import Comonds from "../views/comonds.vue"
 import Prodact from "../views/prodact.vue";
 import Category from "../views/catigory.vue";
 import Fourniture from "../views/fournitures.vue";
-import AddFourniture from "../views/addFourniture.vue"
+import AddFourniture from "../views/addFourniture.vue";
+import BookList from "../views/bookList.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -51,6 +52,12 @@ const router = createRouter({
             name: 'category',
             meta:{layout: Layout},
             component: Category
+          },
+          {
+            path: '/list-book',
+            name: 'list-book',
+            meta:{layout: Layout},
+            component:BookList
           },
     ]
   })
