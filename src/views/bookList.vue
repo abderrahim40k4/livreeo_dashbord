@@ -2,10 +2,10 @@
         
     <component :is="$route.meta.layout">
     <router-view />
-      test
+      <booklListComponent/>
     </component>
 
 </template>
 <script setup>
-import categoryComponente from '../components/categoryComponente.vue';
+import booklListComponent from '../components/booklListComponent.vue';
 </script>
