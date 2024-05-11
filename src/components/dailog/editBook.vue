@@ -105,12 +105,4 @@ import {
 const props = defineProps({
   isOpen : Boolean
 })
-const emit = defineEmits()
-
-function closeModal() {
-  
-}
-function openModal() {
-  isOpen.value = true
-}
 </script>
