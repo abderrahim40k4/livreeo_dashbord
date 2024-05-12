@@ -30,25 +30,30 @@
               class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all rounded-xl"
             >
               <div class="mt-4 w-full flex flex-row justify-evenly p-8">
-                <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xl border-2 border-dark-blue  rounded-full"  placeholder="Category">
+                
+                  <div class="w-1/2 border border-dark-blue p-4 " :class="active ? 'rounded-full' : 'rounded-lg'">
+                    <Listbox v-model="selectedPerson" as="div" @click="handdelling" >
+                    <ListboxButton>{{ selectedPerson.name }}</ListboxButton>
+                    <ListboxOptions>
+                      <ListboxOption
+                        v-for="person in people"
+                        :key="person.id"
+                        :value="person"
+                        :disabled="person.unavailable"
+                      >
+                        {{ person.name }}
+                      </ListboxOption>
+                    </ListboxOptions>
+                  </Listbox>
+                  </div>
+
+                  <div class="w-full">
+
+                  </div>
+                
               </div>
 
-              <div class="mt-4 w-full flex flex-row justify-evenly">
-                <button
-                  type="button"
-                  class="flex justify-center items-center rounded-full  font-Poppins font-light bg-green w-[227px] text-white-color py-2 "
-                  @click="closeModal"
-                >
-                Confirmer
-                </button>
-                <button
-                  type="button"
-                  class="flex justify-center items-center rounded-full font-Poppins font-light bg-red w-[227px] text-white-color py-2 "
-                  @click="closeModal"
-                >
-                Annuler
-                </button>
-              </div>
+              
             </DialogPanel>
           </TransitionChild>
         </div>
@@ -66,8 +71,28 @@
       DialogPanel,
       DialogTitle,
     } from '@headlessui/vue'
-    
+    import {
+    Listbox,
+    ListboxButton,
+    ListboxOptions,
+    ListboxOption,
+  } from '@headlessui/vue'
+
+  const people = [
+    { id: 1, name: 'Durward Reynolds', unavailable: false },
+    { id: 2, name: 'Kenton Towne', unavailable: false },
+    { id: 3, name: 'Therese Wunsch', unavailable: false },
+    { id: 4, name: 'Benedict Kessler', unavailable: true },
+    { id: 5, name: 'Katelyn Rohan', unavailable: false },
+  ]
+  const selectedPerson = ref(people[0])
     const props = defineProps({
       isOpen : Boolean
     })
+
+    const active = ref(true)
+
+    function handdelling(){
+      active.value != active.value
+    }
     </script>
