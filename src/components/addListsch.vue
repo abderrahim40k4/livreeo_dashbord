@@ -61,7 +61,7 @@
         <div class="w-1/3 my-8 relative">
             <label class="font-Poppins font-medium text-sm text-[#6D6D6D]">Ajouter les Fournitures</label>
             <div class="w-full flex flex-row justify-end items-end mt-4 h-12 ">
-              <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium absolute" placeholder="3eme">
+              <input class="w-full p-3 rounded-full border border-sky-color mt-4 text-sm font-Poppins font-medium absolute" placeholder="Valider le nombres des livres">
               <div class=" text-white-color relative my-auto rounded-full bg-dark-blue px-2 py-1font-Poppins text-sm font-semibold w-16 h-6 mx-3 flex flex-row justify-evenly items-center">
                 <span>12</span>
                 <svg width="15" height="9" viewBox="0 0 15 9" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -76,7 +76,7 @@
         <div class="w-full flex h-[220px] flex-rows justify-between items-center ">
           <div><img src="../assets/icons/next.svg"></div>
           <div class="w-10/12 h-full grid grid-cols-6 mx-4 gap-4">
-            <div class=" bg-sky-color/25 rounded-lg inline-flex items-center justify-center"> <img src="../assets/icons/addItema.svg" alt=""></div>
+            <div class=" bg-sky-color/25 rounded-lg inline-flex items-center justify-center cursor-pointer" @click="openModal"> <img src="../assets/icons/addItema.svg" alt=""></div>
             <div class=" bg-sky-color/25 rounded-lg inline-flex items-center justify-center"> <img src="../assets/icons/addItema.svg" alt=""></div>
             <div class=" bg-sky-color/25 rounded-lg inline-flex items-center justify-center"> <img src="../assets/icons/addItema.svg" alt=""></div>
             <div class=" bg-sky-color/25 rounded-lg inline-flex items-center justify-center"> <img src="../assets/icons/addItema.svg" alt=""></div>
@@ -109,7 +109,7 @@
                 Annuler
                 </button>
               </div>
-
+              <addBook :isOpen="callopen"/>
         
       </div>
     </div>
@@ -117,27 +117,25 @@
   </template>
   <script setup>
 import { ref } from 'vue'
-
+import addBook from './dailog/addBook.vue'
 const longs =  ["arabe", "francie" , "englaise"]
 
 
-const removelang = (item)=>{
-  longs.splice(item, 1)
-  console.log(longs)
-  return longs
+const callopen = ref(false)
+function openModal() {
+  callopen.value = true
+}
+function closeModel() {
+  callopen.value = false
 }
 
-function removeItemAll(arr, value) {
-  var i = 0;
-  while (i < arr.length) {
-    if (arr[i] === value) {
-      arr.splice(i, 1);
-    } else {
-      ++i;
-    }
-  }
-  return arr;
-}
+
+
+
+
+
+
+
 
 
 </script>
