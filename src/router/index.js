@@ -9,6 +9,7 @@ import Category from "../views/catigory.vue";
 import Fourniture from "../views/fournitures.vue";
 import AddFourniture from "../views/addFourniture.vue";
 import BookList from "../views/bookList.vue"
+import AddPack from "../views/addPack.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -58,6 +59,12 @@ const router = createRouter({
             name: 'list-book',
             meta:{layout: Layout},
             component:BookList
+          },
+          {
+            path: '/add-pack',
+            name: 'add-pack',
+            meta:{layout: Layout},
+            component:AddPack
           },
     ]
   })
