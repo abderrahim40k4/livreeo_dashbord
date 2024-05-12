@@ -1,6 +1,6 @@
 <template>
     <TransitionRoot appear :show="props.isOpen" as="template">
-    <Dialog as="div" @close="closeModal" class="relative z-10">
+    <Dialog as="div" @close="closeModel" class="relative z-10">
       <TransitionChild
         as="template"
         enter="duration-300 ease-out"
@@ -48,7 +48,7 @@
                   </div>
 
                   <div class="w-2/5">
-                    <button class="w-full inline-flex justify-center items-center p-3 bg-dark-blue rounded-full">
+                    <button class="w-full inline-flex justify-center items-center p-3 bg-dark-blue rounded-full" @click="$emit('newbook')">
                       <img src="../../assets/icons/add-new.svg" alt="">
                     </button>
 

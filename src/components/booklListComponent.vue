@@ -80,7 +80,8 @@ import { callWithAsyncErrorHandling, ref } from 'vue'
 import { Switch } from '@headlessui/vue'
 import opendailig from './opendailig.vue';
 import slideChanger from './slideChanger.vue';
-import editebook from './dailog/editBook.vue'
+import editebook from './dailog/editBook.vue';
+
 
 const callopen = ref(false)
 function openModal() {

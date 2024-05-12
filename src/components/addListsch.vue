@@ -109,7 +109,8 @@
                 Annuler
                 </button>
               </div>
-              <addBook :isOpen="callopen"/>
+              <addBook :isOpen="callopen" @newbook="closeModel"/>
+              <addNewBook :isOpen="addNew" @close="close"/>
         
       </div>
     </div>
@@ -118,15 +119,21 @@
   <script setup>
 import { ref } from 'vue'
 import addBook from './dailog/addBook.vue'
+import addNewBook from './dailog/addNewBook.vue'
 const longs =  ["arabe", "francie" , "englaise"]
 
 
 const callopen = ref(false)
+const addNew = ref(false)
 function openModal() {
   callopen.value = true
 }
 function closeModel() {
   callopen.value = false
+  addNew.value = true
+}
+function close(){
+    addNew.value = false
 }
 
 
