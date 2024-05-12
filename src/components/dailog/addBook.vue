@@ -31,7 +31,7 @@
             >
               <div class="mt-4 w-full flex flex-row justify-evenly p-8">
                 
-                  <div class="w-1/2 border border-dark-blue p-4 " :class="active ? 'rounded-full' : 'rounded-lg'">
+                  <div class="w-2/5 border border-dark-blue p-4 " :class="active ? 'rounded-lg' :'rounded-full'">
                     <Listbox v-model="selectedPerson" as="div" @click="handdelling" >
                     <ListboxButton>{{ selectedPerson.name }}</ListboxButton>
                     <ListboxOptions>
@@ -47,7 +47,10 @@
                   </Listbox>
                   </div>
 
-                  <div class="w-full">
+                  <div class="w-2/5">
+                    <button class="w-full inline-flex justify-center items-center p-3 bg-dark-blue rounded-full">
+                      <img src="../../assets/icons/add-new.svg" alt="">
+                    </button>
 
                   </div>
                 
