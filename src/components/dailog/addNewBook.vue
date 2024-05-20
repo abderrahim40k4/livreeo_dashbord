@@ -70,17 +70,17 @@
                   <div class="mt-4 w-full flex flex-row justify-evenly">
                     <button
                       type="button"
-                      class="flex justify-center items-center rounded-full  font-Poppins font-light bg-green w-[227px] text-white-color py-2 "
+                      class="flex justify-between items-center pl-3 pr-20 rounded-full  font-Poppins font-light bg-green w-[227px] text-white-color py-2 "
                       @click="$emit('close')"
                     >
-                    Confirmer
+                    Confirmer <img src="../../assets/icons/annuler.svg">
                     </button>
                     <button
                       type="button"
-                      class="flex justify-center items-center rounded-full font-Poppins font-light bg-red w-[227px] text-white-color py-2 "
+                      class="flex justify-between items-center pl-3 pr-20 rounded-full font-Poppins font-light bg-red w-[227px] text-white-color py-2 "
                       @click="$emit('close')"
                     >
-                    Annuler
+                    <img src="../../assets/icons/confirm.svg"/>Annuler
                     </button>
                   </div>
                 </DialogPanel>
