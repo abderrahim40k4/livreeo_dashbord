@@ -10,6 +10,7 @@ import Fourniture from "../views/fournitures.vue";
 import AddFourniture from "../views/addFourniture.vue";
 import BookList from "../views/bookList.vue"
 import AddPack from "../views/addPack.vue"
+import ClassView from "../views/classView.vue"
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -67,10 +68,10 @@ const router = createRouter({
             component:AddPack
           },
           {
-            path: '/add-pack',
-            name: 'add-pack',
+            path: '/class',
+            name: 'class',
             meta:{layout: Layout},
-            component:AddPack
+            component:ClassView
           },
     ]
   })
