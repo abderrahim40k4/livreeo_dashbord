@@ -66,6 +66,12 @@ const router = createRouter({
             meta:{layout: Layout},
             component:AddPack
           },
+          {
+            path: '/add-pack',
+            name: 'add-pack',
+            meta:{layout: Layout},
+            component:AddPack
+          },
     ]
   })
   

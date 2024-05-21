@@ -33,7 +33,7 @@
             <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
               <li scope="col" class="h-10 text-start font-normal w-1/6 flex flex-row items-center justify-between">
                 <img src="../assets/book.svg" class="w-1/3">
-                <div class="font-medium text-[10px] h-3/4">
+                <div class="font-medium text-[12px] h-full">
                   <p>Collège ANATOLE</p>
                     <p>FRANCE  / 3ºA</p>
                 </div>
