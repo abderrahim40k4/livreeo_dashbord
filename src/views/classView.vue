@@ -2,10 +2,10 @@
         
     <component :is="$route.meta.layout">
     <router-view />
-      <comondsComponents/>
+      <classComponent/>
     </component>
 
 </template>
 <script setup>
-import comondsComponents from '../components/comondsComponents.vue';
+import classComponent from '../components/classComponent.vue';
 </script>

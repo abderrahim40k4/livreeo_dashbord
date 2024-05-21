@@ -104,7 +104,7 @@ const menu = [
         id: 8,
         text:"Classes",
         pathImg:classe,
-        path:'/',
+        path:'/class',
         isActive:false
     },
     {
