@@ -88,7 +88,14 @@
               class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all rounded-xl"
             >
               <div class="mt-4 w-full flex flex-row justify-evenly p-8">
-                <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xl border-2 border-dark-blue  rounded-full"  placeholder="Category">
+                <div class="w-2/5 inline-flex flex-col">
+                    <label class="font-Poppins font-medium text-dark-blue my-2">Nom de Classe</label>
+                    <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="UIC Casablanca">
+                </div>
+                <div class="w-2/5 inline-flex flex-col">
+                    <label class="font-Poppins font-medium text-dark-blue my-2">Niveau</label>
+                    <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="Category">
+                </div>
               </div>
 
               <div class="mt-4 w-full flex flex-row justify-evenly">
