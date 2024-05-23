@@ -90,7 +90,7 @@ const menu = [
         id: 6,
         text:"Villes",
         pathImg:city,
-        path:'/',
+        path:'/city',
         isActive:false
     },
     {

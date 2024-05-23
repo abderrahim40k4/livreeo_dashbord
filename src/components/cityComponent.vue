@@ -3,7 +3,7 @@
       <div class="w-full h-full pb-10">
         <button class="px-4 my-4 rounded-full bg-dark-blue w-[283px] py-3">
             <p class="font-Popins text-white-color font-light">
-                + Ajouter un produits
+                + Ajouter un Ville
             </p>
         </button>
 
@@ -14,8 +14,8 @@
           <div class="w-full">
 
             <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
-              <li scope="col" class="text-center w-2/6 flex justify-start">Nom de Produit</li>
-              <li scope="col" class="text-center w-2/6 inline-flex justify-start">Status</li>
+              <li scope="col" class="text-center w-2/6 flex justify-start">Ville</li>
+              <li scope="col" class="text-center w-2/6 inline-flex justify-start">code Postel</li>
               <li scope="col" class="text-center w-1/6">Status</li>
               <li scope="col" class="text-center w-1/6"></li>
             </ul>
@@ -26,7 +26,7 @@
             <div class="h-11 my-1">
             <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
               <li scope="col" class="text-center font-normal flex h-full w-2/6">Casablank </li>
-              <li scope="col" class="text-center font-normal flex h-full w-2/6">Casablank </li>
+              <li scope="col" class="text-center font-normal flex h-full w-2/6">75745 </li>
               <li scope="col" class="h-10 text-center flex justify-center items-center font-normal  w-1/6">
                 <Switch
                             v-model="enabled"
@@ -88,13 +88,13 @@
               class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all rounded-xl"
             >
             <div class="w-full inline-flex justify-end items-center"><img src="../assets/icons/close.svg" @click="closeModal" class="cursor-pointer"></div>
-              <div class="mt-2 w-full flex flex-row justify-between p-8">
+              <div class="my-2 w-full flex flex-row justify-between p-8">
                 <div class="w-2/5 inline-flex flex-col">
-                    <label class="font-Poppins font-medium text-dark-blue my-2">Nom de Classe</label>
+                    <label class="font-Poppins font-medium text-dark-blue my-2">Ville</label>
                     <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="UIC Casablanca">
                 </div>
                 <div class="w-2/5 inline-flex flex-col">
-                    <label class="font-Poppins font-medium text-dark-blue my-2">Niveau</label>
+                    <label class="font-Poppins font-medium text-dark-blue my-2">code Postel</label>
                     <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="Category">
                 </div>
               </div>

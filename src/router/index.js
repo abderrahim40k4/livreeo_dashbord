@@ -11,7 +11,8 @@ import AddFourniture from "../views/addFourniture.vue";
 import BookList from "../views/bookList.vue"
 import AddPack from "../views/addPack.vue"
 import ClassView from "../views/classView.vue"
-import langue from '../views/langugeView.vue'
+import langue from '../views/langugeView.vue';
+import city from '../views/cityView.vue'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -67,6 +68,12 @@ const router = createRouter({
             name: 'add-pack',
             meta:{layout: Layout},
             component:AddPack
+          },
+          {
+            path: '/city',
+            name: 'city',
+            meta:{layout: Layout},
+            component:city
           },
           {
             path: '/class',
