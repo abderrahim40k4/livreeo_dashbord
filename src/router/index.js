@@ -11,6 +11,7 @@ import AddFourniture from "../views/addFourniture.vue";
 import BookList from "../views/bookList.vue"
 import AddPack from "../views/addPack.vue"
 import ClassView from "../views/classView.vue"
+import langue from '../views/langugeView.vue'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -72,6 +73,12 @@ const router = createRouter({
             name: 'class',
             meta:{layout: Layout},
             component:ClassView
+          },
+          {
+            path: '/langue',
+            name: 'langue',
+            meta:{layout: Layout},
+            component:langue
           },
     ]
   })

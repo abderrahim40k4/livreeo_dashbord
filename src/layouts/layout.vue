@@ -111,7 +111,7 @@ const menu = [
         id: 9,
         text:"Langues",
         pathImg:lang,
-        path:'/',
+        path:'/langue',
         isActive:false
     },
     {

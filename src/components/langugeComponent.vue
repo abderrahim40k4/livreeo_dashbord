@@ -3,7 +3,7 @@
       <div class="w-full h-full pb-10">
         <button class="px-4 my-4 rounded-full bg-dark-blue w-[283px] py-3">
             <p class="font-Popins text-white-color font-light">
-                + Ajouter un produits
+                + Ajouter un Langue
             </p>
         </button>
 
@@ -14,10 +14,9 @@
           <div class="w-full">
 
             <ul class="h-16 w-full flex flex-row justify-between items-center font-Poppins text-dark-blue font-light text-sm border-b border-dark-blue border-spacing-b-2">
-              <li scope="col" class="text-center w-2/6 flex justify-start">Nom de Produit</li>
-              <li scope="col" class="text-center w-2/6 inline-flex justify-start">Status</li>
-              <li scope="col" class="text-center w-1/6">Status</li>
-              <li scope="col" class="text-center w-1/6"></li>
+              <li scope="col" class="text-center w-3/5 flex justify-start">Langue</li>
+              <li scope="col" class="text-center w-1/5 inline-flex justify-center">Status</li>
+              <li scope="col" class="text-center w-1/5"></li>
             </ul>
           </div>
 
@@ -25,9 +24,8 @@
           <div class="mt-4">
             <div class="h-11 my-1">
             <ul class="font-Poppins text-dark-blue font-thin text-base flex flex-row justify-between items-center" >
-              <li scope="col" class="text-center font-normal flex h-full w-2/6">Casablank </li>
-              <li scope="col" class="text-center font-normal flex h-full w-2/6">Casablank </li>
-              <li scope="col" class="h-10 text-center flex justify-center items-center font-normal  w-1/6">
+              <li scope="col" class="text-center font-normal flex h-full w-3/5">Anglai A1 </li>
+              <li scope="col" class="h-10 text-center flex justify-center items-center font-normal  w-1/5">
                 <Switch
                             v-model="enabled"
                             :class="enabled ? 'bg-[#75E562] px-1' : 'bg-[#cec8c8]'"
@@ -42,7 +40,7 @@
                             />
                             </Switch>
               </li>
-              <li scope="col" class="w-1/6 flex flex-row justify-end">
+              <li scope="col" class="w-1/5 flex flex-row justify-end">
                 <img src="../assets/icons/edit.svg" @click="openModal">
                   <img src="../assets/icons/show.svg">
               </li>
@@ -88,14 +86,10 @@
               class="w-3/5 ml-64 transform overflow-hidden bg-white-color p-8 text-left align-middle shadow-xl transition-all rounded-xl"
             >
             <div class="w-full inline-flex justify-end items-center"><img src="../assets/icons/close.svg" @click="closeModal" class="cursor-pointer"></div>
-              <div class="mt-4 w-full flex flex-row justify-between p-8">
-                <div class="w-2/5 inline-flex flex-col">
-                    <label class="font-Poppins font-medium text-dark-blue my-2">Nom de Classe</label>
-                    <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="UIC Casablanca">
-                </div>
-                <div class="w-2/5 inline-flex flex-col">
-                    <label class="font-Poppins font-medium text-dark-blue my-2">Niveau</label>
-                    <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full"  placeholder="Category">
+              <div class="mt-4 w-full flex flex-row justify-center p-8">
+                <div class="w-10/12">
+                    <label class="font-Poppins font-medium text-dark-blue mb-4">Nom de langue</label>
+                    <input class="w-full p-4 text-dark-blue  font-Poppins font-meduim text-xm border-2 border-dark-blue  rounded-full mt-4"  placeholder="anglais">
                 </div>
               </div>
 
