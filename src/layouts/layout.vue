@@ -97,7 +97,7 @@ const menu = [
         id: 7,
         text:"Écoles",
         pathImg:shoole,
-        path:'/',
+        path:'/shoole',
         isActive:false
     },
     {

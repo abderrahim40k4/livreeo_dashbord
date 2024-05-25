@@ -13,6 +13,7 @@ import AddPack from "../views/addPack.vue"
 import ClassView from "../views/classView.vue"
 import langue from '../views/langugeView.vue';
 import city from '../views/cityView.vue'
+import shoole from '../views/scholeView.vue'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -74,6 +75,12 @@ const router = createRouter({
             name: 'city',
             meta:{layout: Layout},
             component:city
+          },
+          {
+            path: '/shoole',
+            name: 'shoole',
+            meta:{layout: Layout},
+            component:shoole
           },
           {
             path: '/class',
