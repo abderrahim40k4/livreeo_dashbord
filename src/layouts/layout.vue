@@ -118,7 +118,7 @@ const menu = [
         id: 10,
         text:"Coupon Code",
         pathImg:code,
-        path:'/',
+        path:'/coponCode',
         isActive:false
     },
     {

@@ -14,6 +14,7 @@ import ClassView from "../views/classView.vue"
 import langue from '../views/langugeView.vue';
 import city from '../views/cityView.vue'
 import shoole from '../views/scholeView.vue'
+import coponCode from '../views/coponCodeView.vue'
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
@@ -93,6 +94,12 @@ const router = createRouter({
             name: 'langue',
             meta:{layout: Layout},
             component:langue
+          },
+          {
+            path: '/coponCode',
+            name: 'coponCode',
+            meta:{layout: Layout},
+            component:coponCode
           },
     ]
   })
